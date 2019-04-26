@@ -1,4 +1,4 @@
-package cn.duojunrui.blog.blog.controller;
+package cn.duojunrui.blog.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
