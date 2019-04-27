@@ -1,7 +1,11 @@
 package cn.duojunrui.blog.controller;
 
+import cn.duojunrui.blog.repository.UserRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
 
 /**
  * TODO
@@ -15,11 +19,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @RequestMapping("/users")
 public class UserController {
 
-//    @Autowired
-//    private UserRepository userRepository;
-//
-//    public ModelAndView list(Model model){
-//        model.addAttribute("userList", userRepository)
-//    }
+    @Autowired
+    private UserRepository userRepository;
+
+    public ModelAndView list(Model model){
+        model.addAttribute("userList", userRepository);
+        return null;
+    }
 
 }

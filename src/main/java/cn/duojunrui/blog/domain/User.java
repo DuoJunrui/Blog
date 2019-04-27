@@ -20,7 +20,7 @@ import javax.validation.constraints.Size;
 public class User {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY) //自动递增
     private Long id;
 
     @NotEmpty(message = "姓名不能为空")
@@ -37,7 +37,7 @@ public class User {
     @NotEmpty(message = "账号不能为空")
     @Size(min = 3, max = 20)
     @Column(nullable = false, length = 20, unique = true)
-    private String userName;
+    private String username;
 
     @NotEmpty(message = "密码不能为空")
     @Size(max = 100)
@@ -50,11 +50,11 @@ public class User {
     protected User() {
     }
 
-    public User(Long id, String name, String email, String userName) {
+    public User(Long id, String name, String email, String username) {
         this.id = id;
         this.name = name;
         this.email = email;
-        this.userName = userName;
+        this.username = username;
     }
 
     public Long getId() {
@@ -81,12 +81,12 @@ public class User {
         this.email = email;
     }
 
-    public String getUserName() {
-        return userName;
+    public String getUsername() {
+        return username;
     }
 
-    public void setUserName(String userName) {
-        this.userName = userName;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getPassword() {
@@ -103,17 +103,5 @@ public class User {
 
     public void setAvatar(String avatar) {
         this.avatar = avatar;
-    }
-
-    @Override
-    public String toString() {
-        return "User{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", email='" + email + '\'' +
-                ", userName='" + userName + '\'' +
-                ", password='" + password + '\'' +
-                ", avatar='" + avatar + '\'' +
-                '}';
     }
 }

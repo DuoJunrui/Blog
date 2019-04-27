@@ -27,9 +27,9 @@ public interface UserRepository extends JpaRepository<User, Long> {
 
     /**
     * 根据用户账号查询用户
-    * @param userName
+    * @param username
     * @return
     * @date 2019/4/26 23:29
     */
-    User findByUserName(String userName);
+    User findByUsername(String username);
 }

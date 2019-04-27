@@ -39,13 +39,12 @@ public class UserServiceImpl implements UserService {
     @Transactional
     @Override
     public void removeUser(Long id) {
-        userRepository.delete(id);
-
+        //userRepository.delete(id);
     }
 
     @Override
     public User getUserById(Long id) {
-        return userRepository.findOne(id);
+        return userRepository.getOne(id);
     }
 
     @Override
