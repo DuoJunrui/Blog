@@ -16,6 +16,14 @@ body{
     padding: 2.5em 1.5em !important;
 }
 
+.padded-article {
+    padding: 2em 4em !important;
+}
+
+.padded-label-lr {
+    padding: 0 4em !important;
+}
+
 .padded-tb-mini {
     padding-top: 0.2em !important;
     padding-bottom: 0.2em !important;
@@ -110,6 +118,11 @@ body{
 
 .container-custom {
     max-width: 75em !important;
+    margin: auto !important;
+}
+
+.container-small {
+    max-width: 65em !important;
     margin: auto !important;
 }
 

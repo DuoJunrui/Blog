@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="944d1fa2-121d-4ef5-a06c-6bfedb68fd68" name="Default Changelist" comment="前端首页开发完成">
-      <change afterPath="$PROJECT_DIR$/static/images/bg.png" afterDir="false" />
+    <list default="true" id="944d1fa2-121d-4ef5-a06c-6bfedb68fd68" name="Default Changelist" comment="博客详情页制作">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,7 +32,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/images" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -44,6 +44,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\GithubRepositories\Blog" />
       <recent name="E:\GithubRepositories\Blog\static\images" />
       <recent name="E:\WebStormProjects\Blog\static\lib\semantic-ui" />
       <recent name="E:\WebStormProjects\Blog\static\plugins\semantic" />
@@ -78,7 +79,7 @@
       <workItem from="1564971985041" duration="22763000" />
       <workItem from="1564999368730" duration="27000" />
       <workItem from="1565011009985" duration="5596000" />
-      <workItem from="1565054358343" duration="3395000" />
+      <workItem from="1565054358343" duration="6542000" />
     </task>
     <task id="LOCAL-00001" summary="前端首页开发完成">
       <created>1565016181433</created>
@@ -87,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565016181433</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="首页优化">
+      <created>1565060028680</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1565060028680</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,6 +116,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="前端首页开发完成" />
-    <option name="LAST_COMMIT_MESSAGE" value="前端首页开发完成" />
+    <MESSAGE value="首页优化" />
+    <MESSAGE value="博客详情页制作" />
+    <option name="LAST_COMMIT_MESSAGE" value="博客详情页制作" />
   </component>
 </project>
