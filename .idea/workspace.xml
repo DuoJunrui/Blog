@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="944d1fa2-121d-4ef5-a06c-6bfedb68fd68" name="Default Changelist" comment="">
+    <list default="true" id="944d1fa2-121d-4ef5-a06c-6bfedb68fd68" name="Default Changelist" comment="前端首页开发完成">
+      <change afterPath="$PROJECT_DIR$/static/images/bg.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
@@ -24,11 +25,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1OzENPFSfw9g1aCcr9orr4VZkwL" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/images" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -39,13 +43,14 @@
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\WebStormProjects\Blog\static\lib" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\GithubRepositories\Blog\static\images" />
       <recent name="E:\WebStormProjects\Blog\static\lib\semantic-ui" />
       <recent name="E:\WebStormProjects\Blog\static\plugins\semantic" />
       <recent name="E:\WebStormProjects\Blog\static\plugins\jQuery" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\WebStormProjects\Blog\static\lib" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -72,8 +77,17 @@
       <updated>1564971983793</updated>
       <workItem from="1564971985041" duration="22763000" />
       <workItem from="1564999368730" duration="27000" />
-      <workItem from="1565011009985" duration="4911000" />
+      <workItem from="1565011009985" duration="5596000" />
+      <workItem from="1565054358343" duration="3395000" />
     </task>
+    <task id="LOCAL-00001" summary="前端首页开发完成">
+      <created>1565016181433</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1565016181433</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -91,5 +105,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="前端首页开发完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="前端首页开发完成" />
   </component>
 </project>
