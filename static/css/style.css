@@ -20,7 +20,15 @@ body{
     padding: 2em 4em !important;
 }
 
+.padded-article-responsive {
+    padding: 2em 4em !important;
+}
+
 .padded-label-lr {
+    padding: 0 4em !important;
+}
+
+.padded-label-lr-responsive {
     padding: 0 4em !important;
 }
 
@@ -70,6 +78,10 @@ body{
 
 .margin-top-large {
     margin-top: 2em !important;
+}
+
+.margin-bottom-small{
+    margin-bottom: 0.5em !important;
 }
 
 /*----文本设置------*/
@@ -137,6 +149,18 @@ body{
 
     .mobile-show {
         display: block !important;
+    }
+
+    .padded-article-responsive{
+        padding: 1em 0em !important;
+    }
+
+    .padded-label-lr-responsive {
+        padding: 0 0em !important;
+    }
+
+    .mobile-wide{
+        width: 100% !important;
     }
 }
 
