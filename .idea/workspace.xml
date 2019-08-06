@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="944d1fa2-121d-4ef5-a06c-6bfedb68fd68" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/types.html" afterDir="false" />
+    <list default="true" id="944d1fa2-121d-4ef5-a06c-6bfedb68fd68" name="Default Changelist" comment="分类页面开发完成，并添加导航灰色阴影效果">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tags.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/style.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +31,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/static" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -45,8 +43,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\GithubRepositories\Blog\static" />
       <recent name="E:\GithubRepositories\Blog" />
+      <recent name="E:\GithubRepositories\Blog\static" />
       <recent name="E:\GithubRepositories\Blog\static\images" />
       <recent name="E:\WebStormProjects\Blog\static\lib\semantic-ui" />
       <recent name="E:\WebStormProjects\Blog\static\plugins\semantic" />
@@ -81,7 +79,7 @@
       <workItem from="1564971985041" duration="22763000" />
       <workItem from="1564999368730" duration="27000" />
       <workItem from="1565011009985" duration="5596000" />
-      <workItem from="1565054358343" duration="14624000" />
+      <workItem from="1565054358343" duration="18344000" />
     </task>
     <task id="LOCAL-00001" summary="前端首页开发完成">
       <created>1565016181433</created>
@@ -118,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565073674852</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="分类页面开发完成，并添加导航灰色阴影效果">
+      <created>1565073870637</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1565073870637</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
