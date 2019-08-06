@@ -1,5 +1,5 @@
 /*---body----*/
-body{
+body {
     background: url("../images/bg.png");
 }
 
@@ -80,7 +80,7 @@ body{
     margin-top: 2em !important;
 }
 
-.margin-bottom-small{
+.margin-bottom-small {
     margin-bottom: 0.5em !important;
 }
 
@@ -133,6 +133,12 @@ body{
     margin: auto !important;
 }
 
+/*导航栏灰色阴影*/
+.shadow-small {
+    -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3) !important;
+}
+
 .container-small {
     max-width: 65em !important;
     margin: auto !important;
@@ -151,15 +157,19 @@ body{
         display: block !important;
     }
 
-    .padded-article-responsive{
+    .padded-article-responsive {
         padding: 1em 0em !important;
     }
 
     .padded-label-lr-responsive {
-        padding: 0 0em !important;
+        padding: 0 !important;
     }
 
-    .mobile-wide{
+    .mobile-lr-clear {
+        padding: 1em 0 2em 0 !important;
+    }
+
+    .mobile-wide {
         width: 100% !important;
     }
 }
