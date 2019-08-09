@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="944d1fa2-121d-4ef5-a06c-6bfedb68fd68" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/static/css/typo.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admin/publish.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/publish.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +31,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/lib/editormd" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/lib/typo" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -42,15 +43,16 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\GithubRepositories\Blog\static\css" />
       <recent name="E:\GithubRepositories\Blog" />
       <recent name="E:\WebStormProjects\Blog\static\lib" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\GithubRepositories\Blog\static\lib\typo" />
       <recent name="E:\GithubRepositories\Blog\static\lib\editormd" />
       <recent name="E:\GithubRepositories\Blog\admin" />
       <recent name="E:\GithubRepositories\Blog" />
       <recent name="E:\GithubRepositories\Blog\static" />
-      <recent name="E:\GithubRepositories\Blog\static\images" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -84,7 +86,7 @@
       <workItem from="1565108249277" duration="114000" />
       <workItem from="1565183923358" duration="8487000" />
       <workItem from="1565270469929" duration="283000" />
-      <workItem from="1565363519262" duration="2064000" />
+      <workItem from="1565363519262" duration="4429000" />
     </task>
     <task id="LOCAL-00001" summary="前端首页开发完成">
       <created>1565016181433</created>
@@ -191,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565364590918</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Markdown编辑器集成完成">
+      <created>1565365792528</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1565365792528</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,6 +234,7 @@
     <MESSAGE value="添加二级导航字体颜色teal" />
     <MESSAGE value="上传博客原型设计图(采用李仁密老师的，谢谢)" />
     <MESSAGE value="导入前端Markdown编辑器插件editor.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="导入前端Markdown编辑器插件editor.md" />
+    <MESSAGE value="Markdown编辑器集成完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="Markdown编辑器集成完成" />
   </component>
 </project>
