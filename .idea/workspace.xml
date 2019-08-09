@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="944d1fa2-121d-4ef5-a06c-6bfedb68fd68" name="Default Changelist" comment="上传博客原型设计图(采用李仁密老师的，谢谢)">
+    <list default="true" id="944d1fa2-121d-4ef5-a06c-6bfedb68fd68" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/admin/publish.html" beforeDir="false" afterPath="$PROJECT_DIR$/admin/publish.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,16 +41,16 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\GithubRepositories\Blog" />
+      <recent name="E:\WebStormProjects\Blog\static\lib" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\GithubRepositories\Blog\static\lib\editormd" />
       <recent name="E:\GithubRepositories\Blog\admin" />
       <recent name="E:\GithubRepositories\Blog" />
       <recent name="E:\GithubRepositories\Blog\static" />
       <recent name="E:\GithubRepositories\Blog\static\images" />
-      <recent name="E:\WebStormProjects\Blog\static\lib\semantic-ui" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\GithubRepositories\Blog" />
-      <recent name="E:\WebStormProjects\Blog\static\lib" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -83,7 +84,7 @@
       <workItem from="1565108249277" duration="114000" />
       <workItem from="1565183923358" duration="8487000" />
       <workItem from="1565270469929" duration="283000" />
-      <workItem from="1565363519262" duration="738000" />
+      <workItem from="1565363519262" duration="2064000" />
     </task>
     <task id="LOCAL-00001" summary="前端首页开发完成">
       <created>1565016181433</created>
@@ -183,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565270561993</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="导入前端Markdown编辑器插件editor.md">
+      <created>1565364590918</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1565364590918</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,6 +224,7 @@
     <MESSAGE value="博客后台管理-发布博客页开发完成" />
     <MESSAGE value="添加二级导航字体颜色teal" />
     <MESSAGE value="上传博客原型设计图(采用李仁密老师的，谢谢)" />
-    <option name="LAST_COMMIT_MESSAGE" value="上传博客原型设计图(采用李仁密老师的，谢谢)" />
+    <MESSAGE value="导入前端Markdown编辑器插件editor.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="导入前端Markdown编辑器插件editor.md" />
   </component>
 </project>
