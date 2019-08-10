@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./static/css/typo.css">
     <link rel="stylesheet" href="./static/css/animate.css">
     <link rel="stylesheet" href="./static/lib/prism/prism.css">
+    <link rel="stylesheet" href="./static/lib/tocbot/tocbot.css">
     <link rel="stylesheet" href="./static/css/style.css">
 </head>
 <body>
@@ -36,7 +37,7 @@
 <!--导航end-->
 
 <!--中间内容start-->
-<div class="padded-tb-large container-small animated fadeIn">
+<div id="waypoint" class="padded-tb-large container-small animated fadeIn">
     <div class="ui container">
         <div class="ui segment top attached">
             <!--头部-->
@@ -61,33 +62,13 @@
             <!--图片区域-->
             <img src="https://picsum.photos/id/1005/800/450" alt="" class="ui fluid rounded image">
         </div>
-        <div class="ui segment attached padded">
+        <div class="ui segment attached padded ">
             <!--博客内容-->
             <div class="ui basic segment right aligned">
                 <div class="ui orange basic label">原创</div>
             </div>
             <h2 class="ui header center aligned">关于刻意练习的清单</h2>
-            <div id="content" class="padded-article-responsive typo typo-selection">
-
-                <h1>中文网页重设与排版：<i class="serif">Typo.css</i></h1><br/>
-
-                <h2 id="tagline" class="serif">一致化浏览器排版效果，构建最适合中文阅读的网页排版</h2>
-
-                <ol id="table">
-                    <li><a href="#section1">关于 <i class="serif">Typo.css</i></a></li>
-                    <li><a href="#section2">排版实例</a>
-                        <ul>
-                            <li><a href="#section2-1">例1：论语学而篇第一</a></li>
-                            <li><a href="#section2-2">例2：英文排版</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#section3">附录</a>
-                        <ul>
-                            <li><a href="#appendix1"><i class="serif">Typo.css</i> 排版偏重点</a></li>
-                            <li><a href="#appendix2">开源许可</a></li>
-                        </ul>
-                    </li>
-                </ol>
+            <div id="content" class="padded-article-responsive typo typo-selection js-toc-content">
 
                 <h2 id="section1">一、关于 <i class="serif">Typo.css</i></h2>
 
@@ -323,7 +304,7 @@ h5,h6{font-size:1em;}
 
                 </pre>
 
-                <h3 id="section3">三、附录</h3>
+                <h2 id="section3">三、附录</h2>
 
                 <h5 id="appendix1">1、<i class="serif">Typo.css</i> 排版偏重点</h5>
                 <table summary="Typo.css 排版偏重点">
@@ -519,7 +500,7 @@ h5,h6{font-size:1em;}
                         <li>公众号转载：请在文末添加作者Github二维码</li>
                     </ui>
                 </div>
-                <div class="five wide column">
+                <div class="five wide column" id="comment-container">
                     <img src="./static/images/github.png" alt="" class="ui right floated rounded bordered image"
                          style="width: 110px">
                 </div>
@@ -624,6 +605,23 @@ h5,h6{font-size:1em;}
     </div>
 </div>
 <!--中间内容end-->
+<div id="toolbar" class="position-fixed position-right-bottom padded-default" style="display: none">
+    <div class="ui vertical icon buttons">
+        <button class="ui teal button toc" type="button">目录</button>
+        <a class="ui teal button" href="#comment-container">留言</a>
+        <button class="ui wechat icon button"><i class="weixin icon"></i></button>
+        <div id="toTop-button" class="ui icon button"><i class="chevron up icon"></i></div>
+    </div>
+</div>
+
+<div class="ui flowing popup transition hidden catalog" style="width: 250px !important;">
+    <ol class="js-toc"></ol>
+</div>
+
+<div id="qrcode" class="ui wechat-qr flowing popup transition hidden" style="width: 130px !important;">
+    <!--    <img src="./static/images/github.png" alt="" class="ui rounded images" style="width: 120px !important;">-->
+</div>
+
 <br>
 <br>
 <br>
@@ -671,6 +669,10 @@ h5,h6{font-size:1em;}
 <script src="./static/lib/jquery/jquery-3.4.1.min.js"></script>
 <script src="./static/lib/semantic-ui/semantic.min.js"></script>
 <script src="./static/lib/prism/prism.js"></script>
+<script src="./static/lib/tocbot/tocbot.min.js"></script>
+<script src="./static/lib/qrcode/qrcode.min.js"></script>
+<script src="./static/lib/jquery/jquery.scrollTo.min.js"></script>
+<script src="./static/lib/jquery/jquery.waypoints.min.js"></script>
 
 <script>
     /*---手机导航栏隐藏和展开----*/
@@ -684,6 +686,57 @@ h5,h6{font-size:1em;}
         on: 'click',
         position: 'bottom center'
     });
+
+    /*-----目录生成组件初始化----*/
+    tocbot.init({
+        // Where to render the table of contents.
+        tocSelector: '.js-toc',
+        // Where to grab the headings to build the table of contents.
+        contentSelector: '.js-toc-content',
+        // Which headings to grab inside of the contentSelector element.
+        headingSelector: 'h1, h2, h3',
+    });
+
+    /*----目录的显示和隐藏-----*/
+    $('.toc.button').popup({
+        popup: $('.catalog.popup'),
+        on: 'click',
+        position: 'left center'
+    });
+
+    /*----扫描二维码查看文章-----*/
+    $('.wechat').popup({
+        popup: $('.wechat-qr'),
+        position: 'left center'
+    });
+
+    /*---二维码动态生成---*/
+    var qrcode = new QRCode("qrcode", {
+        text: "http://jindo.dev.naver.com/collie",
+        width: 110,
+        height: 110,
+        colorDark: "#000000",
+        colorLight: "#ffffff",
+        correctLevel: QRCode.CorrectLevel.H
+    });
+
+    /*----平滑滚动-----*/
+    $("#toTop-button").click(function () {
+        $(window).scrollTo(0, 500);
+    });
+
+    /*----滚动侦测-----*/
+    var waypoint = new Waypoint({
+        element: document.getElementById('waypoint'),
+        handler: function(direction) {
+            if (direction == "down") {
+                $("#toolbar").show(100);
+            } else {
+                $("#toolbar").hide(500);
+            }
+            // alert('You have scrolled to a thing' + direction)
+        }
+    })
 </script>
 </body>
 </html>

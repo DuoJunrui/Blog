@@ -12,6 +12,10 @@ body {
     padding: 0.3em !important;
 }
 
+.padded-default {
+    padding: 1em !important;
+}
+
 .padded-article-list {
     padding: 2.5em 1.5em !important;
 }
@@ -180,4 +184,14 @@ body {
     position: absolute;
     top: 0;
     right: 0;
+}
+
+.position-fixed {
+    position: fixed !important;
+    z-index: 10 !important;
+}
+
+.position-right-bottom {
+    bottom: 0 !important;
+    right: 0 !important;
 }
