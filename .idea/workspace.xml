@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="944d1fa2-121d-4ef5-a06c-6bfedb68fd68" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/animate.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/lib/animate/animate.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/typo.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/lib/typo/typo.css" afterDir="false" />
-    </list>
+    <list default="true" id="6854206d-15de-408e-b78a-dc22a665fbf1" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,46 +11,46 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
-        <option value="CSS File" />
+        <option value="FxmlFile" />
+        <option value="spring-beans.schema" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1OzENPFSfw9g1aCcr9orr4VZkwL" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
   </component>
+  <component name="ProjectId" id="1PH2xDkFFiXCrmJitiPfu7eO6aG" />
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/static/lib/jquery" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\GithubRepositories\Blog\static\lib\jquery" />
-      <recent name="E:\GithubRepositories\Blog\static\lib\qrcode" />
-      <recent name="E:\GithubRepositories\Blog\static\lib\tocbot" />
-      <recent name="E:\GithubRepositories\Blog\static\lib\prism" />
-      <recent name="E:\GithubRepositories\Blog\static\css" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\GithubRepositories\Blog\static\lib\typo" />
-      <recent name="E:\GithubRepositories\Blog\static\lib\animate" />
-      <recent name="E:\GithubRepositories\Blog\static\css" />
-      <recent name="E:\GithubRepositories\Blog" />
-      <recent name="E:\WebStormProjects\Blog\static\lib" />
+      <recent name="E:\IdeaProjects\Blog\src\main\resources\static" />
+      <recent name="E:\IdeaProjects\Blog\src\main\resources\templates" />
+      <recent name="E:\IdeaProjects\Blog\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -69,199 +65,30 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="BlogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Blog" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.duojunrui.blog.BlogApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="944d1fa2-121d-4ef5-a06c-6bfedb68fd68" name="Default Changelist" comment="" />
-      <created>1564971983793</created>
+      <changelist id="6854206d-15de-408e-b78a-dc22a665fbf1" name="Default Changelist" comment="" />
+      <created>1565516945056</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1564971983793</updated>
-      <workItem from="1564971985041" duration="22763000" />
-      <workItem from="1564999368730" duration="27000" />
-      <workItem from="1565011009985" duration="5596000" />
-      <workItem from="1565054358343" duration="25502000" />
-      <workItem from="1565096383852" duration="2019000" />
-      <workItem from="1565098703179" duration="978000" />
-      <workItem from="1565108249277" duration="114000" />
-      <workItem from="1565183923358" duration="8487000" />
-      <workItem from="1565270469929" duration="283000" />
-      <workItem from="1565363519262" duration="7105000" />
-      <workItem from="1565425434394" duration="6666000" />
+      <updated>1565516945056</updated>
+      <workItem from="1565516946338" duration="3918000" />
     </task>
-    <task id="LOCAL-00001" summary="前端首页开发完成">
-      <created>1565016181433</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1565016181433</updated>
-    </task>
-    <task id="LOCAL-00002" summary="首页优化">
-      <created>1565060028680</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1565060028680</updated>
-    </task>
-    <task id="LOCAL-00003" summary="博客详情页制作">
-      <created>1565063581103</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1565063581103</updated>
-    </task>
-    <task id="LOCAL-00004" summary="博客详情页开发完成">
-      <created>1565071441192</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1565071441192</updated>
-    </task>
-    <task id="LOCAL-00005" summary="分类页面开发完成，并添加导航灰色阴影效果">
-      <created>1565073674852</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1565073674852</updated>
-    </task>
-    <task id="LOCAL-00006" summary="分类页面开发完成，并添加导航灰色阴影效果">
-      <created>1565073870637</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1565073870637</updated>
-    </task>
-    <task id="LOCAL-00007" summary="博客标签展示页面开发完成，并添加菜单页面选中效果">
-      <created>1565077616635</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1565077616635</updated>
-    </task>
-    <task id="LOCAL-00008" summary="博客归档展示页面开发完成">
-      <created>1565080839187</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1565080839187</updated>
-    </task>
-    <task id="LOCAL-00009" summary="关于我页面开发完成">
-      <created>1565083876703</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1565083876703</updated>
-    </task>
-    <task id="LOCAL-00010" summary="修改文字（测试远程仓库是否上传成功）">
-      <created>1565084167130</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1565084167130</updated>
-    </task>
-    <task id="LOCAL-00011" summary="博客后台管理-博客列表页开发完成">
-      <created>1565189749730</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1565189749730</updated>
-    </task>
-    <task id="LOCAL-00012" summary="博客后台管理-发布博客页开发完成">
-      <created>1565193238959</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1565193238959</updated>
-    </task>
-    <task id="LOCAL-00013" summary="添加二级导航字体颜色teal">
-      <created>1565193377016</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1565193377016</updated>
-    </task>
-    <task id="LOCAL-00014" summary="上传博客原型设计图(采用李仁密老师的，谢谢)">
-      <created>1565270561993</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1565270561993</updated>
-    </task>
-    <task id="LOCAL-00015" summary="导入前端Markdown编辑器插件editor.md">
-      <created>1565364590918</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1565364590918</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Markdown编辑器集成完成">
-      <created>1565365792528</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1565365792528</updated>
-    </task>
-    <task id="LOCAL-00017" summary="引用typo.css优化中文网页重设与排版">
-      <created>1565368076492</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1565368076492</updated>
-    </task>
-    <task id="LOCAL-00018" summary="添加博客详情页动画、代码高亮效果">
-      <created>1565370574272</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1565370574272</updated>
-    </task>
-    <task id="LOCAL-00019" summary="添加博客详情页目录生成、二维码生成、平滑滚动以及滚动侦测功能，增强用户体验">
-      <created>1565432019040</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1565432019040</updated>
-    </task>
-    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="前端首页开发完成" />
-    <MESSAGE value="首页优化" />
-    <MESSAGE value="博客详情页制作" />
-    <MESSAGE value="博客详情页开发完成" />
-    <MESSAGE value="分类页面开发完成，并添加导航灰色阴影效果" />
-    <MESSAGE value="博客标签展示页面开发完成，并添加菜单页面选中效果" />
-    <MESSAGE value="博客归档展示页面开发完成" />
-    <MESSAGE value="关于我页面开发完成" />
-    <MESSAGE value="修改文字（测试远程仓库是否上传成功）" />
-    <MESSAGE value="博客后台管理-博客列表页开发完成" />
-    <MESSAGE value="博客后台管理-发布博客页开发完成" />
-    <MESSAGE value="添加二级导航字体颜色teal" />
-    <MESSAGE value="上传博客原型设计图(采用李仁密老师的，谢谢)" />
-    <MESSAGE value="导入前端Markdown编辑器插件editor.md" />
-    <MESSAGE value="Markdown编辑器集成完成" />
-    <MESSAGE value="引用typo.css优化中文网页重设与排版" />
-    <MESSAGE value="添加博客详情页动画、代码高亮效果" />
-    <MESSAGE value="添加博客详情页目录生成、二维码生成、平滑滚动以及滚动侦测功能，增强用户体验" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加博客详情页目录生成、二维码生成、平滑滚动以及滚动侦测功能，增强用户体验" />
   </component>
 </project>
