@@ -3,13 +3,13 @@
 <head th:replace="admin/_fragments :: head(~{::title})">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>博客管理-博客列表</title>
+    <title>博客管理-首页</title>
     <link rel="stylesheet" href="../../static/lib/semantic-ui/semantic.min.css">
     <link rel="stylesheet" href="../../static/css/style.css">
 </head>
 <body>
 <!--导航start-->
-<nav th:replace="admin/_fragments :: menu(1)" class="ui attached inverted segment padded-tb-mini shadow-small">
+<nav th:replace="admin/_fragments :: menu(0)" class="ui attached inverted segment padded-tb-mini shadow-small">
     <div class="ui container">
         <div class="ui menu inverted secondary stackable">
             <h2 class="ui header teal item">管理后台</h2>
@@ -51,85 +51,11 @@
 <!--中间内容start-->
 <div class="padded-tb-large container-small">
     <div class="ui container">
-        <form action="#" method="post" class="ui segment form">
-            <div class="inline fields">
-                <div class="field">
-                    <input type="text" name="title" placeholder="标题">
-                </div>
-                <div class="field">
-                    <div class="ui selection dropdown">
-                        <input type="hidden" name="type">
-                        <i class="dropdown icon"></i>
-                        <div class="default text">分类</div>
-                        <div class="menu">
-                            <div class="item" data-value="1">错误日志</div>
-                            <div class="item" data-value="2">开发者手册</div>
-                            <div class="item" data-value="3">温故而知新</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="field">
-                    <div class="ui checkbox">
-                        <input type="checkbox" name="recommend" id="recommend">
-                        <label for="recommend">推荐</label>
-                    </div>
-                </div>
-                <div class="field">
-                    <button class="ui tiny teal basic button">
-                        <i class="search icon"></i>搜索
-                    </button>
-                </div>
-            </div>
-        </form>
-
-        <table class="ui table celled center aligned">
-            <thead>
-            <tr>
-                <th>序号</th>
-                <th>标题</th>
-                <th>类型</th>
-                <th>推荐</th>
-                <th>更新时间</th>
-                <th>操作</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>1</td>
-                <td class="left aligned">刻意练习清单</td>
-                <td>认知升级</td>
-                <td>是</td>
-                <td>2019-08-07 09:32</td>
-                <td>
-                    <a href="#" class="ui mini teal basic button">编辑</a>
-                    <a href="#" class="ui mini red basic button">删除</a>
-                </td>
-            </tr>
-
-            <tr>
-                <td>2</td>
-                <td class="left aligned">OAuth2授权码模式认证实践讲解</td>
-                <td>认知升级</td>
-                <td>是</td>
-                <td>2019-08-07 16:32</td>
-                <td>
-                    <a href="#" class="ui mini teal basic button">编辑</a>
-                    <a href="#" class="ui mini red basic button">删除</a>
-                </td>
-            </tr>
-            </tbody>
-            <tfoot>
-            <tr>
-                <th colspan="6">
-                    <div class="ui pagination tiny menu left floated">
-                        <a class="item">上一页</a>
-                        <a class="item">下一页</a>
-                    </div>
-                    <a href="#" class="ui tiny green basic button right floated">新增</a>
-                </th>
-            </tr>
-            </tfoot>
-        </table>
+        <div class="ui success large message">
+            <h2>Hi,</h2>
+            <p>多俊睿，欢迎登录！</p>
+        </div>
+        <img src="https://picsum.photos/id/1005/1000/500" class="ui rounded bordered fluid image" alt="">
     </div>
 </div>
 <!--中间内容end-->
