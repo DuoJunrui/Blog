@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="_fragments :: head(~{::title})">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>博客详情页</title>
@@ -13,7 +13,7 @@
 </head>
 <body>
 <!--导航start-->
-<nav class="ui attached inverted segment padded-tb-mini shadow-small">
+<nav th:replace="_fragments :: menu(1)" class="ui attached inverted segment padded-tb-mini shadow-small">
     <div class="ui container">
         <div class="ui menu inverted secondary stackable">
             <h2 class="ui header teal item">Blog</h2>
@@ -626,7 +626,7 @@ h5,h6{font-size:1em;}
 <br>
 <br>
 <!--底部start-->
-<footer class="ui segment inverted vertical padded-tb-massive">
+<footer th:replace="_fragments :: footer" class="ui segment inverted vertical padded-tb-massive">
     <div class="ui container center aligned">
         <div class="ui grid inverted divided stackable">
             <div class="three wide column">
@@ -666,13 +666,15 @@ h5,h6{font-size:1em;}
 </footer>
 <!--底部end-->
 
-<script src="../static/lib/jquery/jquery-3.4.1.min.js"></script>
-<script src="../static/lib/semantic-ui/semantic.min.js"></script>
-<script src="../static/lib/prism/prism.js"></script>
-<script src="../static/lib/tocbot/tocbot.min.js"></script>
-<script src="../static/lib/qrcode/qrcode.min.js"></script>
-<script src="../static/lib/jquery/jquery.scrollTo.min.js"></script>
-<script src="../static/lib/jquery/jquery.waypoints.min.js"></script>
+<th:block th:replace="_fragments :: script">
+    <script src="../static/lib/jquery/jquery-3.4.1.min.js"></script>
+    <script src="../static/lib/semantic-ui/semantic.min.js"></script>
+    <script src="../static/lib/prism/prism.js"></script>
+    <script src="../static/lib/tocbot/tocbot.min.js"></script>
+    <script src="../static/lib/qrcode/qrcode.min.js"></script>
+    <script src="../static/lib/jquery/jquery.scrollTo.min.js"></script>
+    <script src="../static/lib/jquery/jquery.waypoints.min.js"></script>
+</th:block>
 
 <script>
     /*---手机导航栏隐藏和展开----*/
@@ -728,7 +730,7 @@ h5,h6{font-size:1em;}
     /*----滚动侦测-----*/
     var waypoint = new Waypoint({
         element: document.getElementById('waypoint'),
-        handler: function(direction) {
+        handler: function (direction) {
             if (direction == "down") {
                 $("#toolbar").show(100);
             } else {

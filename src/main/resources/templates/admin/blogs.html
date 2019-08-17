@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="_fragments :: head(~{::title})">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>博客管理-博客列表</title>
@@ -137,7 +137,7 @@
 <br>
 <br>
 <!--底部start-->
-<footer class="ui segment inverted vertical padded-tb-massive">
+<footer th:replace="_fragments :: footer" class="ui segment inverted vertical padded-tb-massive">
     <div class="ui container center aligned">
         <div class="ui grid inverted divided stackable">
             <div class="three wide column">
@@ -177,8 +177,10 @@
 </footer>
 <!--底部end-->
 
+<th:block th:replace="_fragments :: script">
 <script src="../../static/lib/jquery/jquery-3.4.1.min.js"></script>
 <script src="../../static/lib/semantic-ui/semantic.min.js"></script>
+</th:block>
 
 <script>
     /*---手机导航栏隐藏和展开----*/

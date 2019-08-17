@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="_fragments :: head(~{::title})">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>首页</title>
+    <title>博客首页</title>
     <link rel="stylesheet" href="../static/lib/semantic-ui/semantic.min.css">
     <link rel="stylesheet" href="../static/css/style.css">
 </head>
 <body>
 <!--导航start-->
-<nav class="ui attached inverted segment padded-tb-mini shadow-small">
+<nav th:replace="_fragments :: menu(1)" class="ui attached inverted segment padded-tb-mini shadow-small">
     <div class="ui container">
         <div class="ui menu inverted secondary stackable">
             <h2 class="ui header teal item">Blog</h2>
-            <a href="#" class="active item mobile-hide m-item"><i class="small icon home"></i>首页</a>
+            <a href="#" class="item mobile-hide m-item active"><i class="small icon home"></i>首页</a>
             <a href="#" class="item mobile-hide m-item"><i class="small icon idea"></i>分类</a>
             <a href="#" class="item mobile-hide m-item"><i class="small icon tags"></i>标签</a>
             <a href="#" class="item mobile-hide m-item"><i class="small icon clone"></i>归档</a>
@@ -88,7 +88,6 @@
                                 <a href="#" target="_blank">
                                     <img src="https://picsum.photos/id/1005/800/450" alt="" class="ui rounded image">
                                 </a>
-
                             </div>
                         </div>
                     </div>
@@ -248,7 +247,6 @@
                                 <a href="#" target="_blank">
                                     <img src="https://picsum.photos/id/1005/800/450" alt="" class="ui rounded image">
                                 </a>
-
                             </div>
                         </div>
                     </div>
@@ -378,7 +376,8 @@
                 <!--二维码-->
                 <h4 class="ui horizontal divider header margin-top-large">扫码访问Github</h4>
                 <div class="ui card centered" style="width: 11em">
-                    <img src="../static/images/github.png" alt="" class="ui rounded image">
+                    <img src="../static/images/github.png" alt="" class="ui rounded image"
+                         th:src="@{/images/github.png}">
                 </div>
             </div>
             <!--右边内容end-->
@@ -390,7 +389,7 @@
 <br>
 <br>
 <!--底部start-->
-<footer class="ui segment inverted vertical padded-tb-massive">
+<footer th:replace="_fragments :: footer" class="ui segment inverted vertical padded-tb-massive">
     <div class="ui container center aligned">
         <div class="ui grid inverted divided stackable">
             <div class="three wide column">
@@ -430,8 +429,10 @@
 </footer>
 <!--底部end-->
 
-<script src="../static/lib/jquery/jquery-3.4.1.min.js"></script>
-<script src="../static/lib/semantic-ui/semantic.min.js"></script>
+<th:block th:replace="_fragments :: script">
+    <script src="../static/lib/jquery/jquery-3.4.1.min.js"></script>
+    <script src="../static/lib/semantic-ui/semantic.min.js"></script>
+</th:block>
 
 <script>
     $('.menu.toggle').click(function () {
