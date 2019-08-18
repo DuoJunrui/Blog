@@ -3,6 +3,7 @@ package cn.duojunrui.blog.service.impl;
 import cn.duojunrui.blog.dao.UserRepository;
 import cn.duojunrui.blog.entity.User;
 import cn.duojunrui.blog.service.UserService;
+import cn.duojunrui.blog.util.MD5Utils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -20,7 +21,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public User checkUser(String account, String password) {
 
-        User user = userRepository.findByAccountAndPassword(account, password);
+        User user = userRepository.findByAccountAndPassword(account, MD5Utils.getMD5(password));
 
         return user;
     }
