@@ -75,9 +75,11 @@
             <tfoot>
             <tr>
                 <th colspan="6">
-                    <div class="ui pagination tiny menu left floated">
-                        <a class="item" th:href="@{/admin/types(page=${page.number}-1)}">上一页</a>
-                        <a class="item" th:href="@{/admin/types(page=${page.number}+1)}">下一页</a>
+                    <div class="ui pagination tiny menu left floated" th:if="${page.totalPages}>1">
+                        <a class="item" th:href="@{/admin/types(page=${page.number}-1)}"
+                           th:unless="${page.first}">上一页</a>
+                        <a class="item" th:href="@{/admin/types(page=${page.number}+1)}"
+                           th:unless="${page.last}">下一页</a>
                     </div>
                     <a href="#" class="ui tiny green basic button right floated"
                        th:href="@{/admin/types/add}">新增</a>
