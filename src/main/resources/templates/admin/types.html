@@ -13,8 +13,8 @@
     <div class="ui container">
         <div class="ui menu inverted secondary stackable">
             <h2 class="ui header teal item">管理后台</h2>
-            <a href="#" class="active item mobile-hide m-item"><i class="small icon home"></i>博客</a>
-            <a href="#" class="item mobile-hide m-item"><i class="small icon idea"></i>分类</a>
+            <a href="#" class="item mobile-hide m-item"><i class="small icon home"></i>博客</a>
+            <a href="#" class="active item mobile-hide m-item"><i class="small icon idea"></i>分类</a>
             <a href="#" class="item mobile-hide m-item"><i class="small icon tags"></i>标签</a>
             <div class="right menu m-item mobile-hide">
                 <div class="ui item dropdown">
@@ -40,8 +40,8 @@
 <div class="ui menu attached pointing">
     <div class="ui container">
         <div class="right menu">
-            <a href="#" class="item">发布新博客</a>
-            <a href="#" class="active item teal">博客列表</a>
+            <a href="#" class="item" th:href="@{/admin/types/add}">新增</a>
+            <a href="#" class="active item teal" th:href="@{/admin/types}">列表</a>
         </div>
     </div>
 </div>
@@ -51,6 +51,12 @@
 <!--中间内容start-->
 <div class="padded-tb-large container-small">
     <div class="ui container">
+
+        <div class="ui success message" th:unless="${#strings.isEmpty(message)}">
+            <i class="close icon"></i>
+            <div class="header">提示：</div>
+            <p th:text="${message}">恭喜，操作成功！</p>
+        </div>
 
         <table class="ui table celled center aligned">
             <thead>
@@ -66,9 +72,9 @@
                 <td class="left aligned" th:text="${type.name}">刻意练习清单</td>
                 <td>
                     <a href="#" class="ui mini teal basic button"
-                       th:href="@{/admin/types/{id}/add(id=${type.id})}">编辑</a>
+                       th:href="@{/admin/types/{id}/edit(id=${type.id})}">编辑</a>
                     <a href="#" class="ui mini red basic button"
-                       th:href="@{/admin/types/{id}/delete(id=${type.id})}">删除</a>
+                       th:href="@{/admin/types/{id}/remove(id=${type.id})}">删除</a>
                 </td>
             </tr>
             </tbody>
@@ -146,6 +152,14 @@
     });
 
     $('.ui.dropdown').dropdown();
+
+    // 消息提示关闭初始化
+    $('.message .close')
+        .on('click', function () {
+            $(this)
+                .closest('.message')
+                .transition('fade');
+        });
 </script>
 </body>
 </html>

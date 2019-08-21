@@ -1,18 +1,18 @@
 package cn.duojunrui.blog.dao;
 
-import cn.duojunrui.blog.entity.Type;
+import cn.duojunrui.blog.entity.Tag;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
  * @Author: Duojunrui
  * @Date: 2019/8/18 23:42
  */
-public interface TypeRepository extends JpaRepository<Type, Long> {
+public interface TagRepository extends JpaRepository<Tag, Long> {
     /**
-     * 根据名称查询分类
+     * 根据名称查询标签
      * @param name
      * @return
      */
-    Type findByName(String name);
+    Tag findByName(String name);
 
 }

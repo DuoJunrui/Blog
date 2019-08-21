@@ -1,6 +1,7 @@
 package cn.duojunrui.blog.entity;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,6 +20,7 @@ public class Tag {
     private Long id;
 
     // 标签名称
+    @NotBlank(message = "标签名称不能为空")
     private String name;
 
     // 构建标签与博客关联关系，多对多

@@ -1,6 +1,8 @@
 package cn.duojunrui.blog.web.admin;
 
+import cn.duojunrui.blog.entity.Tag;
 import cn.duojunrui.blog.entity.Type;
+import cn.duojunrui.blog.service.TagService;
 import cn.duojunrui.blog.service.TypeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
@@ -23,71 +25,71 @@ import javax.validation.Valid;
  */
 @Controller
 @RequestMapping("/admin")
-public class TypeController {
+public class TagController {
 
     @Autowired
-    private TypeService typeService;
+    private TagService tagService;
 
-    @GetMapping("/types")
-    public String types(@PageableDefault(size = 3, sort = {"id"}, direction = Sort.Direction.DESC)
+    @GetMapping("/tags")
+    public String tags(@PageableDefault(size = 3, sort = {"id"}, direction = Sort.Direction.DESC)
                                 Pageable pageable, Model model) {
-        model.addAttribute("page", typeService.listType(pageable));
-        return "/admin/types";
+        model.addAttribute("page", tagService.listTag(pageable));
+        return "/admin/tags";
     }
 
-    @GetMapping("/types/add")
+    @GetMapping("/tags/add")
     public String add(Model model) {
-        model.addAttribute("type", new Type());
-        return "/admin/types_add";
+        model.addAttribute("tag", new Type());
+        return "/admin/tags_add";
     }
 
-    @GetMapping("/types/{id}/edit")
+    @GetMapping("/tags/{id}/edit")
     public String edit(@PathVariable Long id, Model model) {
-        model.addAttribute("type", typeService.getType(id));
-        return "/admin/types_add";
+        model.addAttribute("tag", tagService.getTag(id));
+        return "/admin/tags_add";
     }
 
-    @PostMapping("/types")
-    public String save(@Valid Type type, BindingResult result, RedirectAttributes attributes) {
-        Type types = typeService.getTypeByName(type.getName());
-        if (types != null) {
-            result.rejectValue("name", "nameError", "分类名称重复，添加失败！");
+    @PostMapping("/tags")
+    public String save(@Valid Tag tag, BindingResult result, RedirectAttributes attributes) {
+        Tag tags = tagService.getTagByName(tag.getName());
+        if (tags != null) {
+            result.rejectValue("name", "nameError", "标签名称重复，添加失败！");
         }
         if (result.hasErrors()) {
-            return "/admin/types_add";
+            return "/admin/tags_add";
         }
-        Type newType = typeService.saveType(type);
-        if (newType == null) {
+        Tag newTag = tagService.saveTag(tag);
+        if (newTag == null) {
             attributes.addFlashAttribute("message", "添加失败！");
         } else {
             attributes.addFlashAttribute("message", "添加成功！");
         }
-        return "redirect:/admin/types";
+        return "redirect:/admin/tags";
     }
 
-    @PostMapping("/types/{id}")
-    public String editSave(@Valid Type type, BindingResult result, @PathVariable Long id, RedirectAttributes attributes) {
-        Type types = typeService.getTypeByName(type.getName());
-        if (types != null) {
-            result.rejectValue("name", "nameError", "分类名称重复，修改/编辑失败！");
+    @PostMapping("/tags/{id}")
+    public String editSave(@Valid Tag tag, BindingResult result, @PathVariable Long id, RedirectAttributes attributes) {
+        Tag tags = tagService.getTagByName(tag.getName());
+        if (tags != null) {
+            result.rejectValue("name", "nameError", "标签名称重复，修改/编辑失败！");
         }
         if (result.hasErrors()) {
-            return "/admin/types_add";
+            return "/admin/tags_add";
         }
-        Type newType = typeService.updateType(id, type);
-        if (newType == null) {
+        Tag newTag = tagService.updateTag(id, tag);
+        if (newTag == null) {
             attributes.addFlashAttribute("message", "更新失败！");
         } else {
             attributes.addFlashAttribute("message", "更新成功！");
         }
-        return "redirect:/admin/types";
+        return "redirect:/admin/tags";
     }
 
-    @GetMapping("/types/{id}/remove")
+    @GetMapping("/tags/{id}/remove")
     public String remove(@PathVariable Long id, RedirectAttributes attributes) {
-        typeService.deleteType(id);
+        tagService.deleteTag(id);
         attributes.addFlashAttribute("message","删除成功！");
-        return "redirect:/admin/types";
+        return "redirect:/admin/tags";
     }
 
 }

@@ -1,6 +1,8 @@
 package cn.duojunrui.blog.entity;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,6 +21,7 @@ public class Type {
     private Long id;
 
     // 类型名称
+    @NotBlank(message = "分类名称不能为空")
     private String name;
 
     // 构建类型与博客关联关系，一对多
