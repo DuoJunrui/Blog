@@ -1,11 +1,9 @@
-
-
 # 使用Spring Boot开发一款简约的个人博客
 > 作者 : 多俊睿
 
 ### 个人博客功能：
 
-![](https://raw.githubusercontent.com/DuoJunrui/Blog/master/doc/个人博客功能脑图.jpg)
+![](https://gitee.com/duojunrui/Blog/raw/master/doc/个人博客功能脑图.jpg)
 
 ### 技术组合：
 
@@ -26,10 +24,6 @@
 
 [Semantic UI官网](https://semantic-ui.com/)
 
-[Semantic UI中文官网](http://www.semantic-ui.cn/)
-
-[背景图片资源](https://www.toptal.com/designers/subtlepatterns/)
-
 #### 插件集成：
 
 [编辑器 Markdown](https://pandao.github.io/editor.md/)
@@ -48,7 +42,6 @@
 
 [二维码生成 qrcode.js](https://davidshimjs.github.io/qrcodejs/)
 
-
 ### 构建项目框架：
 
 #### 引入Spring Boot模块：
@@ -61,4 +54,5 @@
 *  DevTools
 
 ### 实体关系图：
-![](https://raw.githubusercontent.com/DuoJunrui/Blog/master/doc/实体关系图.jpg)
+
+![](https://gitee.com/duojunrui/Blog/raw/master/doc/实体关系图.jpg)
