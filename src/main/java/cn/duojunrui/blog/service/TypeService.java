@@ -4,6 +4,8 @@ import cn.duojunrui.blog.entity.Type;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
+import java.util.List;
+
 /**
  * @Author: Duojunrui
  * @Date: 2019/8/18 23:34
@@ -56,4 +58,10 @@ public interface TypeService {
      * @param id
      */
     void deleteType(Long id);
+
+    /**
+     * 查询分类列表
+     * @return
+     */
+    List<Type> listType();
 }

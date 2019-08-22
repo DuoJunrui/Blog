@@ -51,20 +51,25 @@
 <!--中间内容start-->
 <div class="padded-tb-large container-small">
     <div class="ui container">
-        <form action="#" method="post" class="ui segment form">
+        <div class="ui secondary segment form">
+            <input type="hidden" name="page">
             <div class="inline fields">
                 <div class="field">
                     <input type="text" name="title" placeholder="标题">
                 </div>
                 <div class="field">
                     <div class="ui selection dropdown">
-                        <input type="hidden" name="type">
+                        <input type="hidden" name="typeId">
                         <i class="dropdown icon"></i>
                         <div class="default text">分类</div>
                         <div class="menu">
-                            <div class="item" data-value="1">错误日志</div>
+                            <div class="item" data-value="1" th:each="type : ${types}" th:data-value="${type.id}"
+                                 th:text="${type.name}">错误日志
+                            </div>
+                            <!--/*-->
                             <div class="item" data-value="2">开发者手册</div>
                             <div class="item" data-value="3">温故而知新</div>
+                            <!--*/-->
                         </div>
                     </div>
                 </div>
@@ -75,61 +80,66 @@
                     </div>
                 </div>
                 <div class="field">
-                    <button class="ui tiny teal basic button">
+                    <button class="ui tiny teal basic button" type="button" id="search_button">
                         <i class="search icon"></i>搜索
                     </button>
                 </div>
             </div>
-        </form>
+        </div>
+        <div id="table-container">
+            <table class="ui compact teal table center aligned" th:fragement="blogList">
+                <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>标题</th>
+                    <th>类型</th>
+                    <th>推荐</th>
+                    <th>更新时间</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:each="blog, iterStat : ${page.content}">
+                    <td th:text="${iterStat.count}">1</td>
+                    <td class="left aligned" th:text="${blog.title}">刻意练习清单</td>
+                    <td th:text="${blog.type.name}">认知升级</td>
+                    <td th:text="${blog.recommend} ? '是' : '否'">是</td>
+                    <td th:text="${blog.updateTime}">2019-08-07 09:32</td>
+                    <td>
+                        <a href="#" class="ui mini teal basic button"
+                           th:href="@{/admin/blogs/{id}/edit(id=${blog.id})}">编辑</a>
+                        <a href="#" class="ui mini red basic button"
+                           th:href="@{/admin/blogs/{id}/remove(id=${blog.id})}">删除</a>
+                    </td>
+                </tr>
 
-        <table class="ui table celled center aligned">
-            <thead>
-            <tr>
-                <th>序号</th>
-                <th>标题</th>
-                <th>类型</th>
-                <th>推荐</th>
-                <th>更新时间</th>
-                <th>操作</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>1</td>
-                <td class="left aligned">刻意练习清单</td>
-                <td>认知升级</td>
-                <td>是</td>
-                <td>2019-08-07 09:32</td>
-                <td>
-                    <a href="#" class="ui mini teal basic button">编辑</a>
-                    <a href="#" class="ui mini red basic button">删除</a>
-                </td>
-            </tr>
-
-            <tr>
-                <td>2</td>
-                <td class="left aligned">OAuth2授权码模式认证实践讲解</td>
-                <td>认知升级</td>
-                <td>是</td>
-                <td>2019-08-07 16:32</td>
-                <td>
-                    <a href="#" class="ui mini teal basic button">编辑</a>
-                    <a href="#" class="ui mini red basic button">删除</a>
-                </td>
-            </tr>
-            </tbody>
-            <tfoot>
-            <tr>
-                <th colspan="6">
-                    <div class="ui pagination tiny menu left floated">
-                        <a class="item">上一页</a>
-                        <a class="item">下一页</a>
-                    </div>
-                    <a href="#" class="ui tiny green basic button right floated">新增</a>
-                </th>
-            </tr>
-            </tfoot>
-        </table>
+                <tr>
+                    <td>2</td>
+                    <td class="left aligned">OAuth2授权码模式认证实践讲解</td>
+                    <td>认知升级</td>
+                    <td>是</td>
+                    <td>2019-08-07 16:32</td>
+                    <td>
+                        <a href="#" class="ui mini teal basic button">编辑</a>
+                        <a href="#" class="ui mini red basic button">删除</a>
+                    </td>
+                </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <th colspan="6">
+                        <div class="ui pagination tiny menu left floated" th:if="${page.totalPages}>1">
+                            <a class="item" onclick="page(this)" th:attr="data-page=${page.number}-1"
+                               th:unless="${page.first}">上一页</a>
+                            <a class="item" onclick="page(this)" th:attr="data-page=${page.number}+1"
+                               th:unless="${page.last}">下一页</a>
+                        </div>
+                        <a href="#" class="ui tiny green basic button right floated">新增</a>
+                    </th>
+                </tr>
+                </tfoot>
+            </table>
+        </div>
     </div>
 </div>
 <!--中间内容end-->
@@ -178,8 +188,8 @@
 <!--底部end-->
 
 <th:block th:replace="admin/_fragments :: script">
-<script src="../../static/lib/jquery/jquery-3.4.1.min.js"></script>
-<script src="../../static/lib/semantic-ui/semantic.min.js"></script>
+    <script src="../../static/lib/jquery/jquery-3.4.1.min.js"></script>
+    <script src="../../static/lib/semantic-ui/semantic.min.js"></script>
 </th:block>
 
 <script>
@@ -189,6 +199,26 @@
     });
 
     $('.ui.dropdown').dropdown();
+
+    // 给page赋值
+    function page(obj) {
+        $("[name='page']").val($(obj).data("page"));
+        loadData();
+    }
+
+    // 局部加载搜索栏数据
+    function loadData() {
+        $("#table-container").load(/*[[@{/admin/blogs/search}]]*/"/admin/blogs/search", {
+            title: $("[name='title']").val(),
+            typeId: $("[name='typeId']").val(),
+            recommend: $("[name='recommend']").val(),
+            page: $("[name='page']").val(),
+        });
+    }
+
+    $("#search_button").click(function () {
+        loadData();
+    });
 </script>
 </body>
 </html>
