@@ -112,18 +112,6 @@
                            th:href="@{/admin/blogs/{id}/remove(id=${blog.id})}">删除</a>
                     </td>
                 </tr>
-
-                <tr>
-                    <td>2</td>
-                    <td class="left aligned">OAuth2授权码模式认证实践讲解</td>
-                    <td>认知升级</td>
-                    <td>是</td>
-                    <td>2019-08-07 16:32</td>
-                    <td>
-                        <a href="#" class="ui mini teal basic button">编辑</a>
-                        <a href="#" class="ui mini red basic button">删除</a>
-                    </td>
-                </tr>
                 </tbody>
                 <tfoot>
                 <tr>
@@ -134,7 +122,8 @@
                             <a class="item" onclick="page(this)" th:attr="data-page=${page.number}+1"
                                th:unless="${page.last}">下一页</a>
                         </div>
-                        <a href="#" class="ui tiny green basic button right floated">新增</a>
+                        <a href="#" class="ui tiny green basic button right floated"
+                           th:href="@{/admin/blogs/add}">新增</a>
                     </th>
                 </tr>
                 </tfoot>

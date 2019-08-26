@@ -11,6 +11,8 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 /**
  * @Author: Duojunrui
  * @Date: 2019/8/18 23:40
@@ -62,5 +64,10 @@ public class TagServiceImpl implements TagService {
 
         tagRepository.deleteById(id);
 
+    }
+
+    @Override
+    public List<Tag> listTag() {
+        return tagRepository.findAll();
     }
 }

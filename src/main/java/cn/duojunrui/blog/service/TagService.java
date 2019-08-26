@@ -4,6 +4,8 @@ import cn.duojunrui.blog.entity.Tag;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
+import java.util.List;
+
 /**
  * @Author: Duojunrui
  * @Date: 2019/8/21 23:34
@@ -56,4 +58,10 @@ public interface TagService {
      * @param id
      */
     void deleteTag(Long id);
+
+    /**
+     *
+     * @return
+     */
+    List<Tag> listTag();
 }
